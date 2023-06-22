@@ -3,3 +3,8 @@ hame pura html css nd js likhna padega
 ye server side rendering hamlog kaafi chijh ko us e krke kar skte hai one of them is our beloved ejs
  EJS stands for embedded javascript templating engine 
 problem tye hai ki 
+
+Pehle install krna hai 
+then application ko batana hai ki view engine ejs hai 
+then batama hai ki kaha hai ejs 
+then just response.render ko use kr skte hai

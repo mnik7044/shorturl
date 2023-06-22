@@ -18,17 +18,13 @@ app.set('views', path.resolve("./views") ) // path bataraha hai
 
 app.use(express.json()) // this is a middleware
 app.use(express.urlencoded({extended: false}))
-app.get('/test',  async(req,res) => {
-    const allUrls = await URL.find({})
-    return res.render('home', {
-        urls : allUrls  // we can even pass data to our ejs files 
-    })
-} )
+
+
 
 app.use("/url", urlRoute)
 app.use("/", staticRoute)
 
-app.get('/user/:shortId', async(req,res) => {
+app.get('/url/:shortId', async(req,res) => {
 
     const shortId = req.params.shortId;
     const entry = await URL.findOneAndUpdate({
